@@ -4,3 +4,8 @@ dossier = pd.read_csv("Maldie_du_coeur/datasets/raw_data/heart_disease.csv", hea
 print(dossier.head())
 print(dossier.describe())
 print(dossier.shape)
+print(dossier.columns)
+
+dossier.info()
+dossier.describe()
+dossier.isnull().sum()
