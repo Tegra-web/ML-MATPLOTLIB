@@ -28,6 +28,7 @@ colonnes = [
 ]
 
 data.columns = colonnes
-print(data.head())
+
 if __name__ == "__main__": 
     print(data.info())
+    print(data.head())

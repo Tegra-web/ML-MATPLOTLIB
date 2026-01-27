@@ -2,7 +2,7 @@ import torch
 from torch import nn
 
 class MPL(nn.Module):
-    def __init__(self, entree=256, sortie=2):
+    def __init__(self, entree, sortie):
         super().__init__()
 
         self.couches = nn.Sequential(
@@ -17,3 +17,11 @@ class MPL(nn.Module):
 
     def forward(self, x):
         return self.couches(x)
+
+if __name__ == "__main__":
+    entree = 12
+    sortie = 1
+
+    model = MPL(entree, sortie)
+
+    print(model)

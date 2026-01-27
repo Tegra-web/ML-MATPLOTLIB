@@ -8,4 +8,4 @@ data = pd.read_csv(liason)
 
 if __name__ == "__main__":
 
-    print(data.head())
+    print(data.info())
